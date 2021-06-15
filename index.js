@@ -4,10 +4,10 @@
 // Ensure we can run against the HTTPS endpoint
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
-const rp = require('request-promise');
 const {to} = require('await-to-js');
 const {Parser} = require('json2csv');
 const fs = require('fs');
+const query = require('./caching/api-query');
 
 const countries = [{
     code: 'DO',
@@ -20,8 +20,10 @@ const countries = [{
 (async () => {
     let err, results;
     for (let country of countries) { // loop through each country
+        console.info(`Starting on ${country.code}`);
         let overallResults = [];
         for (let city of country.cities) { // loop through each city (query lookup)
+            console.info(`Starting on ${country.code} - ${city}`);
             let page = 1; // start at page 1
             let count = 0;
             let totalCount = 0;
@@ -33,11 +35,11 @@ const countries = [{
                     page,
                     q: city
                 };
-                [err, results] = await to(rp({
-                    uri: `https://location.westernunion.com/api/locations`,
+                [err, results] = await to(query(
+                    `https://location.westernunion.com/api/locations`,
                     qs,
-                    json: true
-                }));
+                    60 * 60
+                ));
                 if (err) { // break out of the script if any error is thrown
                     console.error(err);
                     process.exit();
@@ -49,6 +51,7 @@ const countries = [{
             } while (count < totalCount);
 
             // Print out the results for the specified country/city combination
+            console.info(`Finishing ${country.code} - ${city}`);
             const json2csvParser = new Parser();
             const csv = json2csvParser.parse(overallResults.map(({
                                                                      name,
@@ -65,5 +68,8 @@ const countries = [{
             })));
             fs.writeFileSync(`./data/wu-locations-for-${country.code}-${city}.csv`, csv)
         }
+        console.info(`Finishing ${country.code}`);
     }
+    console.info(`All done!`);
+    process.exit();
 })()
