@@ -65,13 +65,15 @@ const path = require('path');
                                                                      orig_id,
                                                                      streetAddress,
                                                                      state,
-                                                                     location
+                                                                     location,
+                                                                     platinum
                                                                  }) => ({
                 name,
                 orig_id,
                 streetAddress,
                 state,
-                location
+                location,
+                platinum
             })));
             fs.writeFileSync(`./data/wu-locations-for-${country.code}-${city}.csv`, csv)
         }
