@@ -11,18 +11,20 @@ const query = require('./caching/api-query');
 const csv = require('csvtojson');
 const path = require('path');
 
+const FILE_NAME = 'DO_cities.csv'; // change here to retrieve a new country's set of data
+
 (async () => {
 
     // Get all the cities from the CSV file
     const cities = await csv()
         .fromFile(path.join(
             __dirname,
-            './cities/DO_cities.csv'
+            `./cities/${FILE_NAME}`
             )
         );
 
     let countries = [{
-        code: cities[0]['coutry code'],
+        code: cities[0].country_code,
         cities: cities.map(city => city.city)
     }];
     let err, results;
