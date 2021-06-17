@@ -8,16 +8,24 @@ const {to} = require('await-to-js');
 const {Parser} = require('json2csv');
 const fs = require('fs');
 const query = require('./caching/api-query');
-
-const countries = [{
-    code: 'DO',
-    cities: ['Santo Domingo']
-}, {
-    code: 'GH',
-    cities: ['Accra']
-}];
+const csv = require('csvtojson');
+const path = require('path');
 
 (async () => {
+
+    // Get all the cities from the CSV file
+    const cities = await csv()
+        .fromFile(path.join(
+            __dirname,
+            './cities/DO_cities.csv'
+            )
+        );
+
+    let countries = [{
+        code: 'DO',
+        cities: cities.map(city => city.city)
+    }];
+
     let err, results;
     for (let country of countries) { // loop through each country
         console.info(`Starting on ${country.code}`);
