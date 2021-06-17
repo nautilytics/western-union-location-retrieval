@@ -22,10 +22,9 @@ const path = require('path');
         );
 
     let countries = [{
-        code: 'DO',
+        code: cities[0]['coutry code'],
         cities: cities.map(city => city.city)
     }];
-
     let err, results;
     for (let country of countries) { // loop through each country
         console.info(`Starting on ${country.code}`);
