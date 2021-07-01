@@ -1,0 +1,254 @@
+city,country_code
+REMOLINO                      ,CO
+REPELON                       ,CO
+RESTREPO                      ,CO
+RETIRO                        ,CO
+RICAURTE                      ,CO
+RIO DE ORO                    ,CO
+RIO VIEJO                     ,CO
+RIOFRIO                       ,CO
+RIOHACHA                      ,CO
+RIONEGRO                      ,CO
+RIOSUCIO                      ,CO
+RISARALDA                     ,CO
+RIVERA                        ,CO
+ROLDANILLO                    ,CO
+RONCESVALLES                  ,CO
+ROVIRA                        ,CO
+ROZO                          ,CO
+SABANA DE TORRES              ,CO
+SABANAGRANDE                  ,CO
+SABANALARGA                   ,CO
+SABANAS DE SAN ANGEL          ,CO
+SABANETA                      ,CO
+SABOYA                        ,CO
+SAHAGUN                       ,CO
+SALADOBLANCO                  ,CO
+SALAMINA                      ,CO
+SALDAÑA                       ,CO
+SALENTO                       ,CO
+SALGAR                        ,CO
+SAMACA                        ,CO
+SAMANA                        ,CO
+SAMANIEGO                     ,CO
+SAN AGUSTIN                   ,CO
+SAN ALBERTO                   ,CO
+SAN ANDRES                    ,CO
+SAN ANDRES DE SOTAVENTO       ,CO
+SAN ANDRES DE TUMACO          ,CO
+SAN ANDRES ISLAS              ,CO
+SAN ANTERO                    ,CO
+SAN ANTONIO                   ,CO
+SAN ANTONIO DEL TEQUENDAMA    ,CO
+SAN BENITO ABAD               ,CO
+SAN BERNARDO DEL VIENTO       ,CO
+SAN CALIXTO                   ,CO
+SAN CARLOS                    ,CO
+SAN CAYETANO                  ,CO
+SAN CRISTOBAL                 ,CO
+SAN DIEGO                     ,CO
+SAN ESTANISLAO                ,CO
+SAN FRANCISCO                 ,CO
+SAN GIL                       ,CO
+SAN JACINTO                   ,CO
+SAN JERONIMO                  ,CO
+SAN JOSE                      ,CO
+SAN JOSE DE PARE              ,CO
+SAN JOSE DE TOLUVIEJO         ,CO
+SAN JOSE DEL GUAVIARE         ,CO
+SAN JOSE DEL NUS              ,CO
+SAN JUAN DE ARAMA             ,CO
+SAN JUAN DE RIOSECO           ,CO
+SAN JUAN DE URABA             ,CO
+SAN JUAN DEL CESAR            ,CO
+SAN JUAN NEPOMUCENO           ,CO
+SAN LUIS                      ,CO
+SAN LUIS DE CUBARRAL          ,CO
+SAN LUIS DE GACENO            ,CO
+SAN LUIS DE PALENQUE          ,CO
+SAN LUIS DE SINCE             ,CO
+SAN MARCOS                    ,CO
+SAN MARTIN                    ,CO
+SAN MARTIN DE LOBA            ,CO
+SAN MIGUEL                    ,CO
+SAN ONOFRE                    ,CO
+SAN PABLO                     ,CO
+SAN PABLO DE BORBUR           ,CO
+SAN PEDRO                     ,CO
+SAN PEDRO DE LOS MILAGROS     ,CO
+SAN PEDRO DE URABA            ,CO
+SAN PELAYO                    ,CO
+SAN RAFAEL                    ,CO
+SAN ROQUE                     ,CO
+SAN SEBASTIAN DE BUENAVISTA   ,CO
+SAN SEBASTIAN DE MARIQUITA    ,CO
+SAN VICENTE DE CHUCURI        ,CO
+SAN VICENTE DEL CAGUAN        ,CO
+SAN VICENTE DEL CHUCURI       ,CO
+SAN VICENTE FERRER            ,CO
+SANDONA                       ,CO
+SANTA ANA                     ,CO
+SANTA BARBARA                 ,CO
+SANTA CATALINA                ,CO
+SANTA FE                      ,CO
+SANTA FE DE ANTIOQUIA         ,CO
+SANTA HELENA DEL OPON         ,CO
+SANTA LUCIA                   ,CO
+SANTA MARIA                   ,CO
+SANTA MARTA                   ,CO
+SANTA ROSA                    ,CO
+SANTA ROSA DE CABAL           ,CO
+SANTA ROSA DE OSOS            ,CO
+SANTA ROSA DE VITERBO         ,CO
+SANTA ROSA DEL SUR            ,CO
+SANTA SOFIA                   ,CO
+SANTAMARTA                    ,CO
+SANTANA                       ,CO
+SANTANDER                     ,CO
+SANTANDER DE QUILICHAO        ,CO
+SANTO DOMINGO                 ,CO
+SANTO TOMAS                   ,CO
+SANTUARIO                     ,CO
+SARAVENA                      ,CO
+SASAIMA                       ,CO
+SEGOVIA                       ,CO
+SEVILLA                       ,CO
+SIBATE                        ,CO
+SIBUNDOY                      ,CO
+SILVANIA                      ,CO
+SILVIA                        ,CO
+SIMACOTA                      ,CO
+SIMIJACA                      ,CO
+SIMITI                        ,CO
+SINCELEJO                     ,CO
+SOACHA                        ,CO
+SOATA                         ,CO
+SOCHA                         ,CO
+SOCORRO                       ,CO
+SOGAMOSO                      ,CO
+SOLANO                        ,CO
+SOLEDAD                       ,CO
+SONSON                        ,CO
+SOPETRAN                      ,CO
+SOPETRÁN                      ,CO
+SOPO                          ,CO
+SORACA                        ,CO
+SUAITA                        ,CO
+SUAN                          ,CO
+SUAREZ                        ,CO
+SUAZA                         ,CO
+SUBACHOQUE                    ,CO
+SUCRE                         ,CO
+SUESCA                        ,CO
+SUPATA                        ,CO
+SUPIA                         ,CO
+SURATA                        ,CO
+SUSACON                       ,CO
+SUTAMARCHAN                   ,CO
+SUTATAUSA                     ,CO
+TABIO                         ,CO
+TADO                          ,CO
+TAMALAMEQUE                   ,CO
+TAMARA                        ,CO
+TAME                          ,CO
+TAMESIS                       ,CO
+TAMINANGO                     ,CO
+TANGUA                        ,CO
+TARAZA                        ,CO
+TARQUI                        ,CO
+TASCO                         ,CO
+TAURAMENA                     ,CO
+TELLO                         ,CO
+TENA                          ,CO
+TENERIFE                      ,CO
+TENJO                         ,CO
+TEORAMA                       ,CO
+TERUEL                        ,CO
+TESALIA                       ,CO
+TIBACUY                       ,CO
+TIBANA                        ,CO
+TIBASOSA                      ,CO
+TIERRA ALTA                   ,CO
+TIERRALTA                     ,CO
+TIGRERAS                      ,CO
+TIMANA                        ,CO
+TIMBIO                        ,CO
+TOCAIMA                       ,CO
+TOCANCIPA                     ,CO
+TOLEDO                        ,CO
+TOLIMA                        ,CO
+TOLU                          ,CO
+TONA                          ,CO
+TOPAIPI                       ,CO
+TORIBIO                       ,CO
+TORO                          ,CO
+TRINIDAD                      ,CO
+TRUJILLO                      ,CO
+TUBARA                        ,CO
+TULUA                         ,CO
+TUMACO                        ,CO
+TUNJA                         ,CO
+TUNUNGUA                      ,CO
+TUQUERRES                     ,CO
+TURBACO                       ,CO
+TURBO                         ,CO
+TURMEQUE                      ,CO
+TUTAZA                        ,CO
+UBALA                         ,CO
+UBAQUE                        ,CO
+UBATE                         ,CO
+ULLOA                         ,CO
+UMBITA                        ,CO
+UNE                           ,CO
+UNION PANAMERICANA            ,CO
+URABA                         ,CO
+URAMITA                       ,CO
+URIBE                         ,CO
+URIBIA                        ,CO
+URRAO                         ,CO
+USIACURI                      ,CO
+UTICA                         ,CO
+VALDIVIA                      ,CO
+VALENCIA                      ,CO
+VALLE DE SAN JOSE             ,CO
+VALLE DEL GUAMUEZ             ,CO
+VALLEDUPAR                    ,CO
+VEGACHI                       ,CO
+VELEZ                         ,CO
+VENADILLO                     ,CO
+VENECIA                       ,CO
+VENTAQUEMADA                  ,CO
+VERGARA                       ,CO
+VETAS                         ,CO
+VIANI                         ,CO
+VICTORIA                      ,CO
+VIJES                         ,CO
+VILLA CARO                    ,CO
+VILLA DE LEYVA                ,CO
+VILLA DE SAN DIEGO DE UBATE   ,CO
+VILLA DEL ROSARIO             ,CO
+VILLA RICA                    ,CO
+VILLAGARZON                   ,CO
+VILLAHERMOSA                  ,CO
+VILLAMARIA                    ,CO
+VILLANUEVA                    ,CO
+VILLAVICENCIO                 ,CO
+VILLAVIEJA                    ,CO
+VILLETA                       ,CO
+VITERBO                       ,CO
+YACOPI                        ,CO
+YACUANQUER                    ,CO
+YAGUARA                       ,CO
+YARUMAL                       ,CO
+YOLOMBO                       ,CO
+YONDO                         ,CO
+YOPAL                         ,CO
+YOTOCO                        ,CO
+YUMBO                         ,CO
+ZAMBRANO                      ,CO
+ZAPATOCA                      ,CO
+ZAPAYAN                       ,CO
+ZARAGOZA                      ,CO
+ZARZAL                        ,CO
+ZETAQUIRA                     ,CO
+ZIPAQUIRA                     ,CO
