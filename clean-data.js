@@ -19,13 +19,11 @@ const uniqBy = require('lodash.uniqby');
     let allRows = [];
     let countryCode = 'CO';
     const files = fs.readdirSync(BASE_PATH);
-    console.info(`Starting analysis of ${files.length} files`);
     for (let file of files) {
-        console.info(`Reading ${file}`);
         try {
             const rows = await csv()
-                .fromStream(fs.createReadStream(`${BASE_PATH}/${file}`));
-            allRows = uniqBy(allRows.concat(rows), 'orig_id');
+                .fromFile(`${BASE_PATH}/${file}`);
+            allRows = allRows.concat(rows);
         } catch (err) {
             console.error(err);
             process.exit();
@@ -33,11 +31,9 @@ const uniqBy = require('lodash.uniqby');
     }
 
     // Get the unique rows based on ID
-    console.info(`Retrieving unique rows`);
     const uniqueRows = uniqBy(allRows, 'orig_id');
 
     // Save as a new cleaned JSON file
-    console.info(`Saving as cleansed JSON file`);
     const json2csvParser = new Parser();
     const newCsv = json2csvParser.parse(uniqueRows.map(({
                                                             name,
