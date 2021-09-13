@@ -17,7 +17,7 @@ const uniqBy = require('lodash.uniqby');
     // Loop through all the files in the data directory
     // and get the results
     let allRows = [];
-    let countryCode = 'CO';
+    let countryCode = 'ID';
     const files = fs.readdirSync(BASE_PATH);
     for (let file of files) {
         try {

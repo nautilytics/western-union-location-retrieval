@@ -11,7 +11,7 @@ const query = require('./caching/api-query');
 const csv = require('csvtojson');
 const path = require('path');
 
-const FILE_NAME = 'Mexico zips - Sheet1.csv'; // change here to retrieve a new country's set of data
+const FILE_NAME = 'US 92234.csv'; // change here to retrieve a new country's set of data
 
 (async () => {
 
