@@ -17,7 +17,7 @@ const uniqBy = require('lodash.uniqby');
     // Loop through all the files in the data directory
     // and get the results
     let allRows = [];
-    let countryCode = 'ID';
+    let countryCode = 'RU';
     const files = fs.readdirSync(BASE_PATH);
     for (let file of files) {
         try {
@@ -41,14 +41,16 @@ const uniqBy = require('lodash.uniqby');
                                                             streetAddress,
                                                             state,
                                                             location,
-                                                            platinum
+                                                            platinum,
+                                                            COUNTRY_NAME
                                                         }) => ({
         name,
         orig_id,
         streetAddress,
         state,
         location,
-        platinum
+        platinum,
+        COUNTRY_NAME
     })));
     fs.writeFileSync(`./cleaned_data/wu-locations-for-${countryCode}.csv`, newCsv);
 

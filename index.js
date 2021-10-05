@@ -11,7 +11,7 @@ const query = require('./caching/api-query');
 const csv = require('csvtojson');
 const path = require('path');
 
-const FILE_NAME = 'US 92234.csv'; // change here to retrieve a new country's set of data
+const FILE_NAME = 'RU.csv'; // change here to retrieve a new country's set of data
 
 (async () => {
 
@@ -68,14 +68,16 @@ const FILE_NAME = 'US 92234.csv'; // change here to retrieve a new country's set
                                                                      streetAddress,
                                                                      state,
                                                                      location,
-                                                                     platinum
+                                                                     platinum,
+                                                                     COUNTRY_NAME
                                                                  }) => ({
                 name,
                 orig_id,
                 streetAddress,
                 state,
                 location,
-                platinum
+                platinum,
+                COUNTRY_NAME
             })));
             fs.writeFileSync(`./data/wu-locations-for-${country.code}-${city}.csv`, csv)
         }
