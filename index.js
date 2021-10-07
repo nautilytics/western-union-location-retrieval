@@ -11,7 +11,7 @@ const query = require('./caching/api-query');
 const csv = require('csvtojson');
 const path = require('path');
 
-const FILE_NAME = 'RU.csv'; // change here to retrieve a new country's set of data
+const FILE_NAME = 'Barbados Cities.csv'; // change here to retrieve a new country's set of data
 
 (async () => {
 
@@ -30,9 +30,9 @@ const FILE_NAME = 'RU.csv'; // change here to retrieve a new country's set of da
     let err, results;
     for (let country of countries) { // loop through each country
         console.info(`Starting on ${country.code}`);
-        let overallResults = [];
         for (let city of country.cities) { // loop through each city (query lookup)
             console.info(`Starting on ${country.code} - ${city}`);
+            let overallResults = [];
             let page = 1; // start at page 1
             let count = 0;
             let totalCount = 0;
@@ -60,7 +60,6 @@ const FILE_NAME = 'RU.csv'; // change here to retrieve a new country's set of da
             } while (count < totalCount);
 
             // Print out the results for the specified country/city combination
-            console.info(`Finishing ${country.code} - ${city}`);
             const json2csvParser = new Parser();
             const csv = json2csvParser.parse(overallResults.map(({
                                                                      name,
@@ -79,7 +78,8 @@ const FILE_NAME = 'RU.csv'; // change here to retrieve a new country's set of da
                 platinum,
                 COUNTRY_NAME
             })));
-            fs.writeFileSync(`./data/wu-locations-for-${country.code}-${city}.csv`, csv)
+            fs.writeFileSync(`./data/wu-locations-for-${country.code}-${city}.csv`, csv);
+            console.info(`Finishing ${country.code} - ${city}`);
         }
         console.info(`Finishing ${country.code}`);
     }
